@@ -98,11 +98,11 @@ dataSource:
 environments:
     development:
         dataSource:
-            dbCreate: update
+            dbCreate: create
             url: jdbc:oracle:thin:@localhost:1521/orcl
     test:
         dataSource:
-            dbCreate: update
+            dbCreate: create
             url: jdbc:oracle:thin:@localhost:1521/orcl
     production:
         dataSource:

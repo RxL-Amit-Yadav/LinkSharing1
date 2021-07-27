@@ -11,7 +11,12 @@
 
 <body>
 <header>
-    <g:if test="${flash.message}">${flash.message}</g:if>
+    <g:if test="${flash.message}">
+        <div style="border: 2px solid black;height: 30px;width: 50%;background-color:lightgrey">
+           ${flash.message}
+            %{--<button style="float: right" id="flash-b">X</button>--}%
+        </div>
+    </g:if>
     <h2>Home Page</h2>
     <div class=header>
         <div class="link">
@@ -149,7 +154,11 @@
                     </div>
                 </div>
             </div>
+
             <script>
+                $('#flash-b').onclick = (()=>{
+
+                })
                 const loginText = document.querySelector(".title-text .login");
                 const loginForm = document.querySelector("form.login");
                 const loginBtn = document.querySelector("label.login");
@@ -158,7 +167,8 @@
                 signupBtn.onclick = (()=>{
                     loginForm.style.marginLeft = "-50%";
                 loginText.style.marginLeft = "-50%";
-                });
+                    });
+
                 loginBtn.onclick = (()=>{
                     loginForm.style.marginLeft = "0%";
                 loginText.style.marginLeft = "0%";
