@@ -264,8 +264,8 @@
                 <img src="./profilepictire.png" alt="">
             </div>
             <div id="second-start-img">
-                <h3>Name of User</h3>
-                <a href="#">@Name</a>
+                %{--<g:h3></g:h3>--}%
+                <a href="#">@name</a>
                 <br>
                 <Span>Subscription</Span>
                 &nbsp;&nbsp;&nbsp;&nbsp;
@@ -467,7 +467,7 @@
                                                     <textarea class="form-control" id="message-text"></textarea>
                                                 </div>
                                                 <label for="cars">Topics</label><br>
-                                                <select id="cars" name="cars" style="width: 60%;height: 5%;">
+                                                <select id="car" name="cars" style="width: 60%;height: 5%;">
                                                     <option value="volvo">first</option>
                                                     <option value="saab">second</option>
                                                     <option value="fiat">third</option>
