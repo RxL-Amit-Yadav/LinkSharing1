@@ -24,6 +24,15 @@
         </div>
 
         <div id="modals-boot">
+            <g:form controller="topic" action="action1">
+                <input type="text" name="topicname" placeholder="TopicName">
+                %{--<select id="visibility">--}%
+                    %{--<option value="0">Public</option>--}%
+                    %{--<option value="1">Private</option>--}%
+                %{--</select>--}%
+                <input type="button" value="Button">
+            </g:form>
+            %{--<g:form controller="topic" action="action1">--}%
             <div>
                 <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal"><i class="fa fa-comment-o" style="font-size: medium; height:20px;"></i></button>
 
@@ -38,28 +47,31 @@
                                 <h4 class="modal-title">Create Topic</h4>
                             </div>
                             <div class="modal-body">
-                                <form>
+
                                     <div class="form-group">
                                         <label for="recipient-name" class="col-form-label">Name</label>
-                                        <input type="text" class="form-control" id="recipient-name" style="width: 60%;">
+                                        <input type="text" name="topicname" class="form-control" id="recipient-name" style="width: 60%;">
                                     </div>
-                                    <label for="cars">Visibility</label><br>
+                                    <label for="visibility">Visibility</label><br>
                                     <select id="visibility" name="visibility" style="width: 60%;height: 5%;">
                                         <option value="public">public</option>
                                         <option value="private">private</option>
                                         <!-- <option value="fiat">third</option> -->
                                         <!-- <option value="audi">fourth</option> -->
                                     </select>
-                                </form>
+
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 <button type="button" class="btn btn-primary">Save</button>
                             </div>
+
+
                         </div> <!--model contnt-->
 
                     </div>
                 </div>
+            %{--</g:form>--}%
 
             </div>
 
@@ -241,7 +253,7 @@
                         <button><i class="fa fa-file-archive-o" style="font-size: 25px;"></i></button>
 
                         </div> -->
-
+            <g:link controller="login" action="logout">Logout</g:link>
             <div id="pro-file">
                 <i class="fa fa-user" style="font-size: 30px;"></i>
                 <select id="mypro" name="myPro">
@@ -252,11 +264,13 @@
                     <option value="logout">Logout</option>
                 </select>
             </div>
+
         </div>
 
     </div>
     <br>
 </header>
+
 <main id="main-section">
     <div id="first-half">
         <div id="pro-div">
@@ -265,7 +279,7 @@
             </div>
             <div id="second-start-img">
                 %{--<g:h3></g:h3>--}%
-                <a href="#">@name</a>
+                <g:if test="${user}">​${user.firstname} ${user.lastname}</g:>
                 <br>
                 <Span>Subscription</Span>
                 &nbsp;&nbsp;&nbsp;&nbsp;
