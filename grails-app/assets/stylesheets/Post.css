@@ -1,0 +1,331 @@
+/* all pages decoration */
+body{
+    background-image: linear-gradient(to right,#fa4299,#a445b2);
+}
+
+
+.header{
+    border: 1px solid black;
+    width: auto;
+    height:40px;
+    padding: 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link{
+    /* border: 2px solid black; */
+    height:100%;
+    width: 30%;
+    font-size: 30px;
+}
+#search_bar{
+    /* border: 2px solid black; */
+    height:100%;
+    width: 50%;
+    text-align: center;
+
+}
+#search_bar input {
+    height: 30px;
+    width: 70%;
+}
+/* pop -upaaaa */
+#modals-boot{
+    height: 100%;
+    width: 30%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#pro-file i{
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 3px;
+}
+#mypro{
+    margin-top: 5px;
+    float:right;
+    display: inline-block;
+    text-align: center;
+    font-size: 11px;
+}
+/* main section */
+#main-section{
+    display: flex;
+    border: 1px solid black;
+    flex-direction: row-reverse;
+    height: 130%;
+    width: 100%;
+}
+#first-half{
+    border: 2px solid black;
+    height: 100%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+#second-half{
+    /* border: 2px solid black; */
+    height: 100%;
+    width: 60%;
+
+}
+/* profile  section */
+
+#start-img{
+    height: 100%;
+    width: 30%;
+    border: 1px solid black;
+}
+#start-img img{
+    height: 100%;
+    width:100%;
+}
+
+#second-start-img{
+    border: 2px solid black;
+    height: 100%;
+    width: 70%;
+}
+#second-start-img h3{
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+#pop-up1{
+    width: 80%;
+    height: 20%;
+    border: 1px solid black;
+    margin: auto;
+}
+/* popups in displya */
+.third-half{
+    margin: auto;
+    height: 20%;
+    width: 80%;
+    border: 1px solid black;
+}
+/* second section in first half */
+.first-div{
+
+    margin: auto ;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-bottom: 0%;
+    padding: 2px;
+    height: 50%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* border: 2px solid black; */
+}
+.first-div #header-section{
+    /* border: 1px  solid black; */
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+}
+.image{
+    display: inline-block;
+}
+.image img{
+    height: 50px;
+    width: 60px;
+    display: inline-block;
+}
+.recent-1 {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+.write{
+    /* border: 2px solid black; */
+    height: 40%;
+    width: 100%;
+}
+.one-footer{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.one-footer1{
+    /* border: 2px solid black; */
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
+.header-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color:azure;
+
+}
+.header-section a{
+    color: black;
+    margin-top: 5px;
+
+}
+.header-section a:hover{
+    color: brown;
+    transition: 0.5s;
+}
+/* second half */
+#recent-share{
+    height:50%;
+    width: 50%;
+    /* border: 1px solid black; */
+    left: 0%;
+}
+.recent-11{
+    border: 1px solid black;
+    padding: 2px;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-self: start;
+}
+.recent-11 .image11{
+    /* border: 1px solid black; */
+    height: 60%;
+    width: 20%;
+    background-image:url("./profilepictire.png");
+    background-size:cover;
+    background-position: center;
+    margin: 0%;
+    padding: 0%;
+
+}
+.recent-11 .write11{
+    padding: 0%;
+    width: 90%;
+    margin-top: 0%;
+    /* display: inline-block; */
+    /* border: 1px solid green; */
+    text-align: center;
+}
+.recent-11 a{
+    float: right;
+    padding-right: 3%;
+    color: black;
+}
+.recent-11 .sname{
+    float: left;
+}
+.recent-11 a:hover{
+    transition: 0.5s;
+    color: white;
+}
+.link-chain{
+    display: flex;
+    /* border: 1px solid black; */
+    height: 20%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.linklelo{
+    display: flex;
+    width: 80%;
+    padding:10px;
+    justify-content: space-between;
+}
+
+#first-div-head{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+    justify-content: space-between;
+    height: 10%;
+    width: 100%;
+    border: 1px solid black;
+}
+div.write11 > div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30%;
+    width: 100%;
+    border: 2px solid black;
+}
+/* rating */
+.rating {
+    float: right;
+    display: inline-block;
+    position: relative;
+    height: 10px;
+    line-height: 25px;
+    font-size: 25px;
+}
+
+.rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rating label:last-child {
+    position: static;
+}
+
+.rating label:nth-child(1) {
+    z-index: 5;
+}
+
+.rating label:nth-child(2) {
+    z-index: 4;
+}
+
+.rating label:nth-child(3) {
+    z-index: 3;
+}
+
+.rating label:nth-child(4) {
+    z-index: 2;
+}
+
+.rating label:nth-child(5) {
+    z-index: 1;
+}
+
+.rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.rating label .icon {
+    float: left;
+    color: transparent;
+}
+
+.rating label:last-child .icon {
+    color: rgb(236, 220, 220);
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+    color: gold;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #09f;
+}
