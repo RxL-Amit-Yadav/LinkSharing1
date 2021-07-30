@@ -1,160 +1,29 @@
-%{--<%@ page import="linksharing.Visibility; linksharing.Seriousness;linksharing.DocumentResource; linksharing.LinkResource; linksharing.Resource; linksharing.Topic ; linksharing.Subscription ;linksharing.User" %>--}%
 <html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dash_page</title>
-    <link rel="stylesheet" href="${resource(dir: 'css', file: 'Dashboard.css')}">
+    <title>Search</title>
+    <link rel="stylesheet" href="./Search.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 <body>
 <header>
-    <h2>Dashboard</h2>
+    <h2>Search</h2>
     <div class=header>
         <div class="link">
-            <g:link url="[action: 'index', controller: 'globalUser']">Link Sharing</g:link>
+            <a href="_blank">Link Sharing</a>
         </div>
-        <div id ="search_bar">
-            <input type="text" placeholder="Search..">
 
-        </div>
 
         <div id="modals-boot">
-            %{--<g:form controller="topic" action="action1">--}%
-                %{--<input type="text" name="topicname" placeholder="TopicName">--}%
-                %{--<select id="visibility">--}%
-                    %{--<option value="0">Public</option>--}%
-                    %{--<option value="1">Private</option>--}%
-                %{--</select>--}%
-                %{--<input type="button" value="Button">--}%
-            %{--</g:form>--}%
-            %{--<g:form controller="topic" action="action1">--}%
-            <div>
-                <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal"><i class="fa fa-comment-o" style="font-size: medium; height:20px;"></i></button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Create Topic</h4>
-                            </div>
-                            <div class="modal-body">
-
-                                <g:form controller="topic" action="topicsave">
-                                    <div class="field">
-                                        <input type="text" name="topicname" placeholder="Enter Name of Topic" required>
-                                    </div>
-                                    <div class="field">
-                                        <select id="visibility" name="visible" style="width: 100%;height: 70%">
-                                            <option value="public">Public</option>
-                                            <option value="private">Private</option>
-                                        </select>
-                                    </div>
-
-                                        <div class="field btn">
-                                            <div class="btn-layer">
-                                            </div>
-                                            <input type="submit" value="Save">
-                                        </div>
-                                </g:form>
-
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                %{--<button type="button" class="btn btn-primary" data-target="mode">Save</button>--}%
-                            </div>
-
-
-                        </div> <!--model contnt-->
-
-                    </div>
-                </div>
-            %{--</g:form>--}%
-
-            </div>
-
-            <!-- second popup -->
-            <!-- <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Send Invitation</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="recipient-name" class="col-form-label">Email</label>
-                  <input type="text" class="form-control" id="recipient-name" style="width: 60%;">
-                </div>
-                <label for="cars">Topics</label><br>
-                    <select id="cars" name="cars" style="width: 60%;height: 5%;">
-                    <option value="volvo">first</option>
-                    <option value="saab">second</option>
-                     <option value="fiat">third</option>
-                    <option value="audi">fourth</option>
-                    </select>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Invite</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
-
-            <div>
-                <button  type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal2"><i class="fa fa-envelope" style="font-size: medium; height:20px;"></i></button>
-
-                <!-- Modal -->
-                <div class="modal fade" id="myModal2" role="dialog">
-                    <div class="modal-dialog">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Send Invitation</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="form-group">
-                                        <label for="recipient-name" class="col-form-label">Email</label>
-                                        <input type="text" class="form-control" id="recipient-link" style="width: 60%;">
-                                    </div>
-                                    %{--<div class="form-group">--}%
-                                        %{--<label for="message-text" class="col-form-label">Description</label>--}%
-                                        %{--<textarea class="form-control" id="message-text"></textarea>--}%
-                                    %{--</div>--}%
-                                    <label for="cars">Topics</label><br>
-                                    <select id="cars" name="cars" style="width: 60%;height: 5%;">
-                                        <option value="volvo">first</option>
-                                        <option value="saab">second</option>
-                                        <option value="fiat">third</option>
-                                        <option value="audi">fourth</option>
-                                    </select>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default">Invite</button>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            </div>
-                        </div> <!--model contnt-->
-
-                    </div>
-                </div>
+            <div id ="search_bar">
+                <input type="text" placeholder="Search..">
 
             </div>
 
@@ -171,7 +40,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Share Link</h4>
+                                <h4 class="modal-title">Send Invitation</h4>
                             </div>
                             <div class="modal-body">
                                 <form>
@@ -260,63 +129,39 @@
                         <button><i class="fa fa-file-archive-o" style="font-size: 25px;"></i></button>
 
                         </div> -->
-            <g:link controller="login" action="logout">Logout</g:link>
+
             <div id="pro-file">
                 <i class="fa fa-user" style="font-size: 30px;"></i>
                 <select id="mypro" name="myPro">
                     <option value="profile">Profile</option>
-                    <option value="users">Users</option>
-                    <option value="topic">Topic</option>
-                    <option value="post">Post</option>
                     <option value="logout">Logout</option>
                 </select>
             </div>
-
         </div>
 
     </div>
     <br>
 </header>
 
+
+
 <main id="main-section">
-
     <div id="first-half">
-        <div id="pro-div">
-            <div id="start-img">
-                <img src="./profilepictire.png" alt="">
-            </div>
-            <div id="second-start-img">
-                %{--<g:h3></g:h3>--}%
-                <g:if test="${user}">​${user.firstname} ${user.lastname}</g:if>>
-                <br>
-                <Span>Subscription</Span>
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <span>Topics</span>
-                <br>
-                <span>30</span>
-                &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                <span>40</span>
-
-            </div>
-        </div>
-        <br>
         <div class="first-div">
             <div class=header-section>
-                <h4>Subscription</h4>
+                <h4>Trending Topics</h4>
                 <a href="#">Viewall</a>
             </div>
-        <div>
-            <g:each in="${users}" var ="x" >
             <div class="recent-1">
                 <div class="image">
                     <img src="./profilepictire.png" alt="">
                 </div>
-
                 <div class="write">
-                        ${x.topicname}
-                    <a href="#">${x.globalUser.firstname}</a>&nbsp;
+                    <span><a href="#">Grails</a></span><br>
+                    <a href="#">@uday</a>&nbsp;&nbsp;&nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;
-
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
                     <Span>Subscription</Span>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <span>Topics</span>
@@ -338,7 +183,6 @@
                             <option value="public">public</option>
 
                         </select>
-
 
                         <!-- first pop -->
                         <div>
@@ -410,139 +254,35 @@
 
                         </div>
                         <!-- third popup -->
-                        %{--<div>--}%
-                        %{--<g:link controller="topic" action="deleteTopic" params="[keyid:users.id]"><button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal"><i class="fa fa-trash" style="font-size: medium; height:20px;"></i></button></g:link>--}%
+                        <div>
+                            <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal"><i class="fa fa-trash" style="font-size: medium; height:20px;"></i></button>
 
-                            %{--<!-- Modal -->--}%
-                            %{--<div class="modal fade" id="myModal" role="dialog">--}%
-                                %{--<div class="modal-dialog">--}%
+                            <!-- Modal -->
+                            <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
 
-                                    %{--<!-- Modal content-->--}%
-                                    %{--<div class="modal-content">--}%
-                                        %{--<div class="modal-header">--}%
-                                            %{--<button type="button" class="close" data-dismiss="modal">&times;</button>--}%
-                                            %{--<h4 class="modal-title">Modal Header</h4>--}%
-                                        %{--</div>--}%
-                                        %{--<div class="modal-body">--}%
-                                            %{--<p>Some text in the modal.</p>--}%
-                                        %{--</div>--}%
-                                        %{--<div class="modal-footer">--}%
-                                            %{--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>--}%
-                                        %{--</div>--}%
-                                    %{--</div> <!--model contnt-->--}%
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <p>Some text in the modal.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div> <!--model contnt-->
 
-                                %{--</div>--}%
-                            %{--</div>--}%
+                                </div>
+                            </div>
 
                         </div>
 
                     </div>
                 </div>
 
-            </div>
-            </g:each>
-        </div>
-
-            %{--<div class="recent-1">--}%
-                %{--<div class="image">--}%
-                    %{--<img src="./profilepictire.png" alt="">--}%
-                %{--</div>--}%
-                %{--<div class="write">--}%
-                    %{--<span><a href="#">Grails</a></span><br>--}%
-                    %{--<a href="#">@uday</a>&nbsp;&nbsp;&nbsp;&nbsp;--}%
-                %{--&nbsp;&nbsp;&nbsp;&nbsp;--}%
-                %{--&nbsp;&nbsp;&nbsp;&nbsp;--}%
-                %{--&nbsp;&nbsp;&nbsp;&nbsp;--}%
-                    %{--<Span>Subscription</Span>--}%
-                    %{--&nbsp;&nbsp;&nbsp;&nbsp;--}%
-                    %{--<span>Topics</span>--}%
-                    %{--<br>--}%
-                    %{--<a href="#">Unsubscribe</a>--}%
-                    %{--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--}%
-                    %{--<span>30</span>--}%
-                    %{--&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;--}%
-                    %{--<span>40</span>--}%
-                    %{--<div class="one-footer1">--}%
-                        %{--<select id="serious" name="serious">--}%
-                            %{--<option value="serious">Serious</option>--}%
-                            %{--<option value="veryserious">Very Serious</option>--}%
-                            %{--<option value="casual">Casual</option>--}%
-
-                        %{--</select>--}%
-                        %{--<!-- first pop -->--}%
-                        %{--<div>--}%
-                            %{--<button  type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal6"><i class="fa fa-envelope" style="font-size: medium; height:20px;"></i></button>--}%
-
-                            %{--<!-- Modal -->--}%
-                            %{--<div class="modal fade" id="myModal6" role="dialog">--}%
-                                %{--<div class="modal-dialog">--}%
-
-                                    %{--<!-- Modal content-->--}%
-                                    %{--<div class="modal-content">--}%
-                                        %{--<div class="modal-header">--}%
-                                            %{--<button type="button" class="close" data-dismiss="modal">&times;</button>--}%
-                                            %{--<h4 class="modal-title">Send Invitation</h4>--}%
-                                        %{--</div>--}%
-                                        %{--<div class="modal-body">--}%
-                                            %{--<form>--}%
-                                                %{--<div class="form-group">--}%
-                                                    %{--<label for="recipient-name" class="col-form-label">Email</label>--}%
-                                                    %{--<input type="text" class="form-control" id="recipient-link" style="width: 60%;">--}%
-                                                %{--</div>--}%
-                                                %{--<div class="form-group">--}%
-                                                    %{--<label for="message-text" class="col-form-label">Description</label>--}%
-                                                    %{--<textarea class="form-control" id="message-text"></textarea>--}%
-                                                %{--</div>--}%
-                                                %{--<label for="cars">Topics</label><br>--}%
-                                                %{--<select id="car" name="cars" style="width: 60%;height: 5%;">--}%
-                                                    %{--<option value="volvo">first</option>--}%
-                                                    %{--<option value="saab">second</option>--}%
-                                                    %{--<option value="fiat">third</option>--}%
-                                                    %{--<option value="audi">fourth</option>--}%
-                                                %{--</select>--}%
-                                            %{--</form>--}%
-                                        %{--</div>--}%
-                                        %{--<div class="modal-footer">--}%
-                                            %{--<button type="button" class="btn btn-default">Invite</button>--}%
-                                            %{--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>--}%
-                                        %{--</div>--}%
-                                    %{--</div> <!--model contnt-->--}%
-
-                                %{--</div>--}%
-                            %{--</div>--}%
-
-                        %{--</div>--}%
-
-                    %{--</div>--}%
-                %{--</div>--}%
-
-            %{--</div>--}%
-        </div>
-        <hr>
-        <div class="first-div">
-            <div class=header-section>
-                <h5>Trending Topics</h5>
-            </div>
-            <div class="recent-1">
-                <div class="image">
-                    <img src="./profilepictire.png" alt="">
-                </div>
-                <div class="write">
-                    <span><a href="#">Grails</a></span><br>
-                    <a href="#">@uday</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                    <Span>Subscription</Span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>Topics</span>
-                    <br>
-                    <a href="#">Unsubscribe</a>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>30</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-                    <span>40</span>
-                </div>
             </div>
 
             <div class="recent-1">
@@ -573,22 +313,39 @@
                         </select>
                         <!-- first pop -->
                         <div>
-                            <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal"><i class="fa fa-envelope" style="font-size: medium; height:20px;"></i></button>
+                            <button  type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#myModal6"><i class="fa fa-envelope" style="font-size: medium; height:20px;"></i></button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal fade" id="myModal6" role="dialog">
                                 <div class="modal-dialog">
 
                                     <!-- Modal content-->
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Modal Header</h4>
+                                            <h4 class="modal-title">Send Invitation</h4>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Some text in the modal.</p>
+                                            <form>
+                                                <div class="form-group">
+                                                    <label for="recipient-name" class="col-form-label">Email</label>
+                                                    <input type="text" class="form-control" id="recipient-link" style="width: 60%;">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="message-text" class="col-form-label">Description</label>
+                                                    <textarea class="form-control" id="message-text"></textarea>
+                                                </div>
+                                                <label for="cars">Topics</label><br>
+                                                <select id="cars" name="cars" style="width: 60%;height: 5%;">
+                                                    <option value="volvo">first</option>
+                                                    <option value="saab">second</option>
+                                                    <option value="fiat">third</option>
+                                                    <option value="audi">fourth</option>
+                                                </select>
+                                            </form>
                                         </div>
                                         <div class="modal-footer">
+                                            <button type="button" class="btn btn-default">Invite</button>
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                         </div>
                                     </div> <!--model contnt-->
@@ -603,20 +360,88 @@
 
             </div>
         </div>
+        <hr>
+        <div class="first-div">
+            <div id="first-div-head">
+                <h4>Top Posts</h4>
+                <!-- <input type="text" id="search-box2" placeholder="Search.."> -->
+            </div>
+            <div class="recent-11">
+                <div class="image11">
+
+                </div>
+                <div class="write11">
+                    <a href="#" class="sname">Amit Yadav</a>
+                    <a href="#">grails</a>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+                    <div class="link-chain">
+                        <div>
+                            <i class="fa fa-google" style="font-size: larger;"></i>
+                            <i class="fa fa-twitter" style="font-size: larger;"></i>
+                            <i class="fa fa-facebook" style="font-size: larger;"></i>
+                        </div>
+
+                        <div class="linklelo">
+                            <a href="#">Download</a>
+                            <a href="#">View Full Size</a>
+                            <a href="#">Mark as Read</a>
+                            <a href="#">View Post</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="recent-11">
+                <div class="image11">
+
+                </div>
+                <div class="write11">
+                    <a href="#" class="sname">Amit Yadav</a>
+                    <a href="#">grails</a>
+                    <br>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
+                    <div class="link-chain">
+                        <div>
+                            <i class="fa fa-google" style="font-size: larger;"></i>
+                            <i class="fa fa-twitter" style="font-size: larger;"></i>
+                            <i class="fa fa-facebook" style="font-size: larger;"></i>
+                        </div>
+
+                        <div class="linklelo">
+                            <a href="#">Download</a>
+                            <a href="#">View Full Size</a>
+                            <a href="#">Mark as Read</a>
+                            <a href="#">View Post</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
     <div id="recent-share">
         <div>
-            <h4>Inbox</h4>
-            <input type="text" id="search-box2" placeholder="Search..">
+            <h4>Search</h4>
+            <!-- <input type="text" id="search-box2" placeholder="Search.."> -->
         </div>
         <div class="recent-11">
             <div class="image11">
 
             </div>
             <div class="write11">
-                <a href="#" class="sname">Amit Yadav</a>
-                <a href="#">grails</a>
+                <div>
+                    <a href="#" class="sname">Amit Yadav</a>
+                    <a href="#">Grails</a>
+                </div>
+
                 <br>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown </p>
                 <div class="link-chain">

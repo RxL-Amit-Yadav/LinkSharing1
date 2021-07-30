@@ -9,15 +9,15 @@ class GlobalUserController {
 
         GlobalUser user = GlobalUser.findByUsernameOrEmail(params.username,params.email);
         if(user){
-            flash.message ="User Already exist";
+            flash.toast ="User Already exist";
             println("Bhai register ho to rkha hai");
             redirect(controller: 'globalUser');
         }
         else{
-            GlobalUser u = new GlobalUser(params);
+            GlobalUser u = new GlobalUser(email:params.email,username: params.username,password:params.password,firstname: params.firstname,lastname: params.lastname,confirmpassword: params.confirmpassword,admin:false,active: true);
             println("ok finally you are in");
             u.save(flush:true,failOnError:true);
-            redirect(controller:"login" )
+            redirect(controller:"login");
         }
 
 

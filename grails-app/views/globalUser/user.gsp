@@ -3,19 +3,16 @@
 <head>
     <link rel="stylesheet" href="${resource(dir: 'css', file: 'user.css')}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
 <header>
     <g:if test="${flash.message}">
-        <div style="border: 2px solid black;height: 30px;width: 50%;background-color:lightgrey">
-           ${flash.message}
-            %{--<button style="float: right" id="flash-b">X</button>--}%
-        </div>
+        <div class="message" role="status">${flash.message}</div>
     </g:if>
     <h2>Home Page</h2>
     <div class=header>
@@ -112,7 +109,11 @@
                                     <input type="password" name="password" placeholder="Password" required>
                                 </div>
                                 <div class="pass-link">
-                                    <a href="#">Forgot password?</a></div>
+                                    <a data-toggle="modal" data-target="#myModal">Forgot password?</a>
+                                </div>
+
+
+
                                 <div class="field btn">
                                     <div class="btn-layer">
                                     </div>
@@ -121,6 +122,40 @@
                                 <div class="signup-link">
                                     Not a member? <a href="">Signup now</a></div>
                             </g:form>
+                            <div id="myModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <h4 class="modal-title">Modal Header</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <g:form controller="login" action="forgotPassword">
+                                                <div class="field">
+                                                    <input type="text" name="email" placeholder="Enter Your Email" required>
+                                                </div>
+                                                <div class="field">
+                                                    <input type="password" name="password" placeholder="Enter New Password" required>
+                                                </div>
+                                                <div class="field">
+                                                    <input type="password" name="cpassword" placeholder="Confirm password" required>
+                                                </div>
+                                                <div class="field btn">
+                                                    <div class="btn-layer">
+                                                    </div>
+                                                    <input type="submit" value="Signup">
+                                                </div>
+                                            </g:form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                             <g:form controller="globalUser" action="draw" class="signup">
                                 <div class="field">
                                     <input type="text" name="firstname" placeholder="firstName" required>
@@ -153,12 +188,12 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
-            <script>
-                $('#flash-b').onclick = (()=>{
 
-                })
+
+            <script>
                 const loginText = document.querySelector(".title-text .login");
                 const loginForm = document.querySelector("form.login");
                 const loginBtn = document.querySelector("label.login");

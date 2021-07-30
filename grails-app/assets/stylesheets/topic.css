@@ -23,18 +23,19 @@ body{
 #search_bar{
     /* border: 2px solid black; */
     height:100%;
-    width: 30%;
+    width: 50%;
     text-align: center;
+    float: right;
 
 }
 #search_bar input {
     height: 30px;
-    width: 70%;
+    width: 50%;
 }
 /* pop -upaaaa */
 #modals-boot{
     height: 100%;
-    width: 30%;
+    width: 50%;
     /* border: 2px solid black; */
     display: flex;
     flex-direction: row;
@@ -55,7 +56,7 @@ body{
 /* main section */
 #main-section{
     display: flex;
-    border: 2px solid black;
+    border: 1px solid black;
     flex-direction: row;
     height: 130%;
     width: 100%;
@@ -66,7 +67,7 @@ body{
     width: 45%;
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 #second-half{
     /* border: 2px solid black; */
@@ -76,10 +77,12 @@ body{
 }
 /* profile  section */
 #pro-div{
-    width: 80%;
-    height: 15%;
-    border: 2px solid black;
-    margin: auto;
+    width: 60%;
+    height: 20%;
+    border: 1px solid black;
+    margin: auto;margin-bottom: 0%;
+    margin-top: 0%;
+
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -87,17 +90,18 @@ body{
 #start-img{
     height: 100%;
     width: 30%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 #start-img img{
-    height: 100%;
+    height: 50%;
     width:100%;
 }
 
 #second-start-img{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     height: 100%;
     width: 70%;
+    padding-left: 10%;
 }
 #second-start-img h3{
     margin-top: 0%;
@@ -115,13 +119,14 @@ body{
     margin: auto;
     height: 20%;
     width: 80%;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 /* second section in first half */
 .first-div{
 
     margin: auto ;
-    margin-bottom: 0%;
+    margin-top: 0%;
+    /* margin-bottom: 0%; */
     padding: 2px;
     height: 45%;
     width: 80%;
@@ -145,11 +150,11 @@ body{
     display: inline-block;
 }
 .recent-1 {
-    height: 50%;
+    height: 30%;
     width: 100%;
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 .write{
     /* border: 2px solid black; */
@@ -159,7 +164,7 @@ body{
 .one-footer{
     /* border: 2px solid black; */
     width: 100%;
-    height: 70%;
+    height: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -186,7 +191,7 @@ body{
 
 }
 .header-section a:hover{
-    color: white;
+    color: brown;
 }
 /* second half */
 #recent-share{
@@ -228,7 +233,7 @@ body{
     width: 90%;
     margin-top: 0%;
     /* display: inline-block; */
-     border: 1px solid green;
+    /* border: 1px solid green; */
     text-align: center;
 }
 .recent-11 a{
@@ -239,7 +244,10 @@ body{
 .recent-11 .sname{
     float: left;
 }
-
+.recent-11 a:hover{
+    transition: 0.5s;
+    color: white;
+}
 .link-chain{
     display: flex;
     /* border: 1px solid black; */
@@ -259,30 +267,4 @@ body{
 }
 
 
- form .field{
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
-}
- form .field input{
-    height: 100%;
-    width: 100%;
-    outline: none;
-    padding-left: 15px;
-    border-radius: 5px;
-    border: 1px solid lightgrey;
-    border-bottom-width: 2px;
-    font-size: 17px;
-    transition: all 0.3s ease;
-}
-form .field input:focus{
-    border-color: #fc83bb;
-    /* box-shadow: inset 0 0 3px #fb6aae; */
-}
-form .field input::placeholder{
-    color: #999;
-    transition: all 0.3s ease;
-}
-form .field input:focus::placeholder{
-    color: #b3b3b3;
-}
+
