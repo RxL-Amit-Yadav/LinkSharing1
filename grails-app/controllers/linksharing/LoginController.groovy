@@ -14,12 +14,19 @@ class LoginController {
             redirect(controller: 'globalUser')
         }
         else{
+
             session.setAttribute("user0",user)
             println("login done!")
             redirect(controller: 'home');
         }
     }
 
+
+
+            session.userId=user.id;
+            redirect(controller: 'home');
+        }
+    }
 
     def logout(){
         session.invalidate();
@@ -32,10 +39,17 @@ class LoginController {
 //        render(user)
         user.password=params.get("password")
 
+
         if(user.admin == true){
             render("ADMIN USER CANNOT CHANGE");
             return
         }
+
+//        if(user.admin == true){
+//            render("ADMIN USER CANNOT CHANGE")
+//            return
+//        }
+
 
 
         if(user.password == params.get('cpassword')){

@@ -19,6 +19,7 @@ class Topic {
     String topicname;
     Date dateCreated;
     Date lastUpdated;
+
     Visibility visibility;
     GlobalUser globalUser;
     static hasMany = [subscriptions:Subscription,globalresources:GlobalResource];
@@ -30,5 +31,11 @@ class Topic {
         dateCreated nullable: true;
         lastUpdated nullable: true;
     }
+
+
+
+    static hasMany = [subscriptions:Subscription,globalresources:GlobalResource];
+    static belongsTo = [globalusers:GlobalUser];
+
 
 }

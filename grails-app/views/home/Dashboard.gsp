@@ -33,6 +33,15 @@
             </div>
         </div>
         <div id="modals-boot">
+            <g:form controller="topic" action="action1">
+                <input type="text" name="topicname" placeholder="TopicName">
+                %{--<select id="visibility">--}%
+                    %{--<option value="0">Public</option>--}%
+                    %{--<option value="1">Private</option>--}%
+                %{--</select>--}%
+                <input type="button" value="Button">
+            </g:form>
+            %{--<g:form controller="topic" action="action1">--}%
             <div>
 
                 <button type="button" class="btn btn-info btn-md" data-toggle="modal" data-target="#createTopics"><i class="fa fa-comment-o" style="font-size: medium; height:20px;"></i></button>
@@ -48,6 +57,7 @@
                                 <h4 class="modal-title">Create Topic</h4>
                             </div>
                             <div class="modal-body">
+
 
                                 <g:form controller="topic" action="createTopic">
                                     <div class="field">
@@ -66,6 +76,19 @@
                                             <input type="submit" value="Save">
                                         </div>
                                 </g:form>
+
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Name</label>
+                                        <input type="text" name="topicname" class="form-control" id="recipient-name" style="width: 60%;">
+                                    </div>
+                                    <label for="visibility">Visibility</label><br>
+                                    <select id="visibility" name="visibility" style="width: 60%;height: 5%;">
+                                        <option value="public">public</option>
+                                        <option value="private">private</option>
+                                        <!-- <option value="fiat">third</option> -->
+                                        <!-- <option value="audi">fourth</option> -->
+                                    </select>
+
 
                             </div>
                             <div class="modal-footer">
@@ -216,6 +239,7 @@
 
             </div>
 
+
             <div class="col-2" >
                 <div class="dropdown drop">
                     <button class="btn btn-secondary dropdown-toggle btnn" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #5bc0de;;border-radius: 10px">
@@ -261,6 +285,30 @@
 
 
 
+
+            <!-- <div>
+                        <button><c</i></button>
+
+                         </div>
+                         <div>
+                        <button><i class="fa fa-paperclip" style="font-size: 25px;"></i></button>
+                         </div>
+                         <div>
+                        <button><i class="fa fa-file-archive-o" style="font-size: 25px;"></i></button>
+
+                        </div> -->
+            <g:link controller="login" action="logout">Logout</g:link>
+            <div id="pro-file">
+                <i class="fa fa-user" style="font-size: 30px;"></i>
+                <select id="mypro" name="myPro">
+                    <option value="profile">Profile</option>
+                    <option value="users">Users</option>
+                    <option value="topic">Topic</option>
+                    <option value="post">Post</option>
+                    <option value="logout">Logout</option>
+                </select>
+            </div>
+
         </div>
 
     </div>
@@ -276,8 +324,12 @@
             </div>
             <div id="second-start-img">
                 %{--<g:h3></g:h3>--}%
+
                 <strong>​ ${user.firstname}${user.lastname}</strong><br>
                 <a>@${user.username}</a>
+
+                <g:if test="${user}">​${user.firstname} ${user.lastname}</g:>
+
                 <br>
                 <Span>Subscription</Span>
                 &nbsp;&nbsp;&nbsp;&nbsp;
