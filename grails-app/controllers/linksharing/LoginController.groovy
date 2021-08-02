@@ -7,16 +7,27 @@ class LoginController {
     }
     def action1(){
         GlobalUser user = GlobalUser.findByEmailAndPassword(params.get("email"),params.get("password"));
+
         if(!user){
             flash.message = "Invalid Credentials/User doesn't Exist"
             println("Kaun ho bhai?");
             redirect(controller: 'globalUser')
         }
         else{
+
+            session.setAttribute("user0",user)
+            println("login done!")
+            redirect(controller: 'home');
+        }
+    }
+
+
+
             session.userId=user.id;
             redirect(controller: 'home');
         }
     }
+
     def logout(){
         session.invalidate();
         redirect(controller: 'globalUser')
@@ -28,10 +39,17 @@ class LoginController {
 //        render(user)
         user.password=params.get("password")
 
+
+        if(user.admin == true){
+            render("ADMIN USER CANNOT CHANGE");
+            return
+        }
+
 //        if(user.admin == true){
 //            render("ADMIN USER CANNOT CHANGE")
 //            return
 //        }
+
 
 
         if(user.password == params.get('cpassword')){
