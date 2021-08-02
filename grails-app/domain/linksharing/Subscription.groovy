@@ -1,13 +1,15 @@
 package linksharing
 
 class Subscription {
-   Date datecreated;
-    Topic topic;
-    GlobalUser user1;
-//    public enum seriousness {
-//        SERIOUS,
-//        CASUAL,
-//        VERYSERIOUS
-//    }
-   static belongsTo = [globalusers:GlobalUser,topics:Topic];
+    enum Seriousness{
+        SERIOUS,
+        CASUAL,
+        VERYSERIOUS,
+    }
+    Seriousness seriousness;
+   Date dateCreated;
+    Topic topics;
+    GlobalUser globalUser;
+
+   static belongsTo = [globalUser:GlobalUser,topics:Topic];
 }

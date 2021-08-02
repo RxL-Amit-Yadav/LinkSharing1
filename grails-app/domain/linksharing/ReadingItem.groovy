@@ -2,7 +2,7 @@ package linksharing
 
 class ReadingItem {
     Boolean isRead;
-    GlobalUser user1;
-    GlobalResource resource1;
-    static belongsTo = [globalusers:GlobalUser,globalresources:GlobalResource];
+    GlobalUser globalUser;
+    GlobalResource globalResource;
+    static belongsTo = [globalUser:GlobalUser,globalResource:GlobalResource];
 }

@@ -12,14 +12,16 @@
     <title>Document</title>
 </head>
 <body>
-<g:if test="${flash.message}">${flash.message}</g:if>
+<g:if test="${flash.message}">
+    <div class="message" role="status">${flash.message}</div>
+</g:if>
 <div class="wrapper fadeInDown">
     <div id="formContent">
         <!-- Tabs Titles -->
 
         <!-- Icon -->
         <div class="fadeIn first">
-            <img src="./profilepictire.png" id="icon" alt="User Icon" />
+            <img src="login/profilepictire.png" id="icon" alt="User Icon" />
         </div>
 
         <!-- Login Form -->
@@ -31,7 +33,7 @@
 
         <!-- Remind Passowrd -->
         <div id="formFooter">
-            <a class="underlineHover" href="#">Forgot Password?</a>
+            <a class="underlineHover" href="../globalUser/ForgetPassword.gsp">Forgot Password?</a>
         </div>
 
     </div>
