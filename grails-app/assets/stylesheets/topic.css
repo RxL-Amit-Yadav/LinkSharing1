@@ -1,11 +1,13 @@
 /* all pages decoration */
 body{
     background-image: url("lg.jpg");
+    background-image: linear-gradient(to right,#fa4299,#a445b2);
 }
 
 
 .header{
     border: 1px solid black;
+    border: 2px solid black;
     width: auto;
     height:40px;
     padding: 2px;
@@ -58,6 +60,7 @@ body{
 #main-section{
     display: flex;
     /*border: 1px solid black;*/
+    border: 1px solid black;
     flex-direction: row;
     height: 130%;
     width: 100%;
@@ -111,11 +114,34 @@ body{
 .second-start-img{
     /* border: 2px solid black; */
     padding: 3px;
+    width: 60%;
+    height: 20%;
+    border: 1px solid black;
+    margin: auto;margin-bottom: 0%;
+    margin-top: 0%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+#start-img{
+    height: 100%;
+    width: 30%;
+    /* border: 2px solid black; */
+}
+#start-img img{
+    height: 50%;
+    width:100%;
+}
+
+#second-start-img{
+    /* border: 2px solid black; */
     height: 100%;
     width: 70%;
     padding-left: 10%;
 }
 .second-start-img h3{
+#second-start-img h3{
     margin-top: 0%;
     margin-bottom: 0%;
 }
@@ -159,6 +185,8 @@ body{
 .image img{
     height: 110px;
     width: 80px;
+    height: 50px;
+    width: 60px;
     display: inline-block;
 }
 .recent-1 {
@@ -175,6 +203,9 @@ body{
 .write{
     /* border: 2px solid black; */
     padding: 4px;
+}
+.write{
+    /* border: 2px solid black; */
     height: 40%;
     width: 100%;
 }
@@ -215,6 +246,7 @@ body{
     height:50%;
     width: 50%;
     /*border: 1px solid black;*/
+    /* border: 1px solid black; */
     left: 0%;
 }
 #recent-share h4{
@@ -224,6 +256,11 @@ body{
 }
 .recent-11{
     /*border: 1px solid black;*/
+
+
+
+}
+.recent-11{
     border: 1px solid black;
     padding: 2px;
     height: 40%;
@@ -236,6 +273,10 @@ body{
      /*border: 1px solid black;*/
     height: 50%;
     width: 20%;
+    /* border: 1px solid black; */
+    height: 60%;
+    width: 20%;
+    background-image:url("./profilepictire.png");
     background-size:cover;
     background-position: center;
     margin: 0%;
@@ -255,6 +296,12 @@ body{
     background-color: #c8e7f7;
 
     box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+.recent-11 .write11{
+    padding: 0%;
+    width: 90%;
+    margin-top: 0%;
+    /* display: inline-block; */
+    /* border: 1px solid green; */
     text-align: center;
 }
 .recent-11 a{
@@ -266,6 +313,10 @@ body{
     float: left;
 }
 
+.recent-11 a:hover{
+    transition: 0.5s;
+    color: white;
+}
 .link-chain{
     display: flex;
     /* border: 1px solid black; */
@@ -285,3 +336,7 @@ body{
 }
 
 
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}

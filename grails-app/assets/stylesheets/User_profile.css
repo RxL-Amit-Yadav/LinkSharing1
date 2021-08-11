@@ -1,6 +1,7 @@
 /* all pages decoration */
 body{
     background-image: linear-gradient(to right,lightblue,white);
+    background-image: linear-gradient(to right,#fa4299,#a445b2);
 }
 
 

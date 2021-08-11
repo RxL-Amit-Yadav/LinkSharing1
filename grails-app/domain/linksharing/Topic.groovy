@@ -4,7 +4,12 @@ class Topic {
     String topicname;
     Date dateCreated;
     Date lastUpdated;
-    GlobalUser createdBy;
+//    Visibility visibility;
+//    GlobalUser createdBy;
     static hasMany = [subscriptions:Subscription,globalresources:GlobalResource];
     static belongsTo = [globalusers:GlobalUser];
+
+//    enum Visibility{
+//        PUBLIC,PRIVATE
+//    }
 }
