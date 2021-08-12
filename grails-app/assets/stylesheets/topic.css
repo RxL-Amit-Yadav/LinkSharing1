@@ -1,10 +1,12 @@
 /* all pages decoration */
 body{
+    background-image: url("lg.jpg");
     background-image: linear-gradient(to right,#fa4299,#a445b2);
 }
 
 
 .header{
+    border: 1px solid black;
     border: 2px solid black;
     width: auto;
     height:40px;
@@ -13,6 +15,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: azure;
 }
 .link{
     /* border: 2px solid black; */
@@ -56,6 +59,7 @@ body{
 /* main section */
 #main-section{
     display: flex;
+    /*border: 1px solid black;*/
     border: 1px solid black;
     flex-direction: row;
     height: 130%;
@@ -69,6 +73,14 @@ body{
     flex-direction: column;
     justify-content:space-evenly;
 }
+#first-half > h4{
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: white;
+}
 #second-half{
     /* border: 2px solid black; */
     height: 100%;
@@ -77,6 +89,31 @@ body{
 }
 /* profile  section */
 #pro-div{
+    width: 80%;
+    height: 20%;
+    border: 1px solid black;
+    margin: auto;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: #c8e7f7;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+}
+.start-img{
+    height: 100%;
+    width: 40%;
+    /* border: 2px solid black; */
+}
+.start-img img{
+    height: 100%;
+    width:90%;
+}
+
+.second-start-img{
+    /* border: 2px solid black; */
+    padding: 3px;
     width: 60%;
     height: 20%;
     border: 1px solid black;
@@ -103,6 +140,7 @@ body{
     width: 70%;
     padding-left: 10%;
 }
+.second-start-img h3{
 #second-start-img h3{
     margin-top: 0%;
     margin-bottom: 0%;
@@ -145,6 +183,8 @@ body{
     display: inline-block;
 }
 .image img{
+    height: 110px;
+    width: 80px;
     height: 50px;
     width: 60px;
     display: inline-block;
@@ -155,6 +195,14 @@ body{
     display: flex;
     flex-direction: row;
     border: 1px solid black;
+    background-color: #c8e7f7;
+
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
+
+}
+.write{
+    /* border: 2px solid black; */
+    padding: 4px;
 }
 .write{
     /* border: 2px solid black; */
@@ -197,6 +245,7 @@ body{
 #recent-share{
     height:50%;
     width: 50%;
+    /*border: 1px solid black;*/
     /* border: 1px solid black; */
     left: 0%;
 }
@@ -204,6 +253,9 @@ body{
     margin-top: 0%;
     margin-bottom: 0%;
     padding: 0%;
+}
+.recent-11{
+    /*border: 1px solid black;*/
 
 
 
@@ -218,6 +270,9 @@ body{
     justify-self: start;
 }
 .recent-11 .image11{
+     /*border: 1px solid black;*/
+    height: 50%;
+    width: 20%;
     /* border: 1px solid black; */
     height: 60%;
     width: 20%;
@@ -228,6 +283,19 @@ body{
     padding: 0%;
 
 }
+.image11 img{
+    height: 150px;
+    width: 100%;
+}
+.recent-11 .write11{
+    padding: 5px;
+    width: 90%;
+    margin-top: 0%;
+    /* display: inline-block; */
+    /*border: 1px solid black;*/
+    background-color: #c8e7f7;
+
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.2);
 .recent-11 .write11{
     padding: 0%;
     width: 90%;
@@ -244,6 +312,7 @@ body{
 .recent-11 .sname{
     float: left;
 }
+
 .recent-11 a:hover{
     transition: 0.5s;
     color: white;
@@ -261,6 +330,12 @@ body{
     justify-content: flex-start;
 }
 #recent-share > div{
+    /*border: 1px solid black;*/
+    display: flex;
+    justify-content: space-between;
+}
+
+
     border: 1px solid black;
     display: flex;
     justify-content: space-between;

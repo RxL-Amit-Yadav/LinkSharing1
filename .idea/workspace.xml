@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4fd18d1d-db58-4293-9661-c80ca2dc2085" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/3.5/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.asscache" beforeDir="false" afterPath="$PROJECT_DIR$/build/.asscache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/BootStrap$_closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/BootStrap$_closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/BootStrap$_closure2.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/BootStrap$_closure2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/BootStrap.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/BootStrap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/DocumentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/DocumentResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/GlobalResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/GlobalResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/GlobalUser$__clinit__closure1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/GlobalUser$__clinit__closure1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/GlobalUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/GlobalUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/GlobalUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/GlobalUserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/HomeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/HomeController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/LinkResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/LinkResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/ReadingItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/ReadingItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/ResourceRating.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/ResourceRating.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/Subscription.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/Subscription.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/main/linksharing/Topic.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/main/linksharing/Topic.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/META-INF/grails.build.info" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/META-INF/grails.build.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/stacktrace.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/stacktrace.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/assets/stylesheets/Dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/Dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/assets/stylesheets/editProfile.css" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/editProfile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/assets/stylesheets/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/assets/stylesheets/user.css" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/assets/stylesheets/user.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/conf/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/conf/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/linksharing/AdminController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/linksharing/AdminController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/linksharing/GlobalUserController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/linksharing/GlobalUserController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/linksharing/HomeController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/linksharing/HomeController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/linksharing/LoginController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/linksharing/LoginController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/controllers/linksharing/UserController.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/controllers/linksharing/UserController.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/linksharing/GlobalResource.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/linksharing/GlobalResource.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/linksharing/GlobalUser.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/linksharing/GlobalUser.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/linksharing/LinkResource.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/linksharing/LinkResource.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/linksharing/ReadingItem.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/linksharing/ReadingItem.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/linksharing/ResourceRating.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/linksharing/ResourceRating.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/linksharing/Subscription.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/linksharing/Subscription.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/domain/linksharing/Topic.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/domain/linksharing/Topic.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/init/linksharing/BootStrap.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/init/linksharing/BootStrap.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/globalUser/editProfile.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/globalUser/editProfile.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/globalUser/user.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/globalUser/user.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/home/Dashboard.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/home/Dashboard.gsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grails-app/views/login/login.gsp" beforeDir="false" afterPath="$PROJECT_DIR$/grails-app/views/login/login.gsp" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/linksharing/GlobalresourceController.groovy">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/linksharing/GlobalUserController.groovy">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/linksharing/HomeController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/views/home/Dashboard.gsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="398" column="41" selection-start-line="398" selection-start-column="41" selection-end-line="398" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/grails-app/views/home/Dashboard.gsp" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="77" />
+    <option name="y" value="47" />
+    <option name="width" value="1161" />
+    <option name="height" value="641" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="LinkSharing1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinkSharing1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinkSharing1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinkSharing1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinkSharing1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinkSharing1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinkSharing1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinkSharing1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinkSharing1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinkSharing1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="linksharing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinkSharing1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinkSharing1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinkSharing1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinkSharing1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinkSharing1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinkSharing1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="globalUser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LinkSharing1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LinkSharing1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="grails-app" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fd18d1d-db58-4293-9661-c80ca2dc2085" name="Default Changelist" comment="" />
+      <created>1628702967015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628702967015</updated>
+      <workItem from="1628702969610" duration="2883000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2883000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980047" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Build" weight="0.32899022" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Gradle" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/grails-app/views/home/Dashboard.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="398" column="41" selection-start-line="398" selection-start-column="41" selection-end-line="398" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/linksharing/GlobalresourceController.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/linksharing/GlobalUserController.groovy">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/linksharing/HomeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
