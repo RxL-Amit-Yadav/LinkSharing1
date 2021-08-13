@@ -8,6 +8,7 @@ class GlobalUser {
     String lastname;
     String confirmpassword;
 //    byte[] photo;
+    String photo;
     boolean admin;
     boolean active;
     Date dateCreated;
@@ -23,5 +24,6 @@ class GlobalUser {
         firstname(blank: false)
         lastname(blank: false)
         confirmpassword(bindable: true,nullable: true,blank: true)
+        photo(nullable: true)
     }
 }

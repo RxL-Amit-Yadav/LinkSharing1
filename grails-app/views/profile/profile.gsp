@@ -52,11 +52,11 @@
                                     <g:link controller="admin" action="adminView">Users</g:link>
                                 </div>
                                 <div class="col-5">
-                                    <a href="#">Topics</a>
+                                    <g:link controller="admin" action="topics">Topics</g:link>
                                 </div>
                                 <div class="col-5">
-                                    <a href="#">Posts</a>
-                                </div>
+                                <g:link controller="admin" action="posts">Posts</g:link>
+
 
                                 <div class="col-5">
                                     <g:link controller="login" action="logout" href="#">Logout</g:link>
@@ -97,7 +97,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <span>Topics</span>
                 <br>
-                <span>${linksharing.Subscription.countByTopics(Topic.findByGlobalUser(u))}</span>
+                <span>${linksharing.Subscription.countByGlobalUser(u)}</span>
                 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
                 <span>${linksharing.Topic.countByGlobalUser(u)}</span>
 

@@ -2,7 +2,7 @@ package linksharing
 
 class ResourceRating {
     int score;
-    GlobalUser user1;
-    GlobalResource resource1;
-    static belongsTo = [globalusers:GlobalUser,globalresources:GlobalResource];
+    GlobalUser globalUser;
+    GlobalResource resources;
+    static belongsTo = [globalUser:GlobalUser,resources:GlobalResource];
 }

@@ -1,8 +1,12 @@
 package linksharing
 
+import jdk.nashorn.api.scripting.JSObject
+import jdk.nashorn.internal.parser.JSONParser
+import jdk.nashorn.internal.runtime.JSONListAdapter
 import org.hibernate.Session
 
 class TopicController {
+    def homeService
     def topicsShow(){
         GlobalUser u= session.getAttribute("user0") as GlobalUser
         def topic=Topic.findById(params.get("id")as long)
@@ -14,15 +18,18 @@ class TopicController {
             render("there is no user present");
         }
 
+
+
         GlobalUser u= session.getAttribute("user0") as GlobalUser
         def user = GlobalUser.get(u.id)
         Topic t = new Topic(topicname: params.get("topicname"), globalUser: user)
-        Topic[] tall = Topic.findAll();
+        Topic [] tall = Topic.findAll();
+        def map = homeService.fetchmodal(user);
         for(int i=0;i<tall.length;i++){
             if(t.topicname == tall[i].topicname ){
                 flash.message = "Topic Already Exists"
-                render("topic already exists")
-                return;
+                render(view: '/home/Dashboard',model: map)
+                return
             }
         }
 
@@ -43,7 +50,9 @@ class TopicController {
         Subscription s = new Subscription(globalUser: user, topics: t, seriousness: Subscription.Seriousness.VERYSERIOUS)
         s.save(flush:true)
         flash.message = "Topic Successfully created"
-        redirect url: request.getHeader("Referer")
+
+
+    redirect(url:request.getHeader('Referer'))
     }
 
     def delete(){
@@ -80,8 +89,7 @@ class TopicController {
         for(int i=0;i<tall.length;i++){
             if(params.topicname == tall[i].topicname ){
                 flash.message = "Topic Already Exists"
-                render("topic already exists")
-                return;
+
             }
         }
         t1.topicname = params.topicname;

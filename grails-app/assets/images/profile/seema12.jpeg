@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: linksharing
+        defaultPackage: emp_dept
     gorm:
         reactor:
             # Whether to translate GORM events into Reactor events
@@ -14,17 +14,25 @@ info:
         version: '@info.app.version@'
         grailsVersion: '@info.app.grailsVersion@'
 spring:
+    jmx:
+        unique-names: true
     main:
         banner-mode: "off"
     groovy:
         template:
             check-template-location: false
-
-# Spring Actuator Endpoints are Disabled by Default
-endpoints:
-    enabled: false
-    jmx:
-        enabled: true
+    devtools:
+        restart:
+            additional-exclude:
+                - '*.gsp'
+                - '**/*.gsp'
+                - '*.gson'
+                - '**/*.gson'
+                - 'logback.groovy'
+                - '*.properties'
+management:
+    endpoints:
+        enabled-by-default: false
 
 ---
 grails:
@@ -75,12 +83,13 @@ grails:
             htmlcodec: xml
             codecs:
                 expression: html
-                scriptlets: html
+                scriptlet: html
                 taglib: none
                 staticparts: none
-endpoints:
-    jmx:
-        unique-names: true
+management:
+    endpoints:
+        jmx:
+            unique-names: true
 
 ---
 hibernate:
@@ -93,12 +102,12 @@ dataSource:
     jmxExport: true
     driverClassName: oracle.jdbc.OracleDriver
     dialect : org.hibernate.dialect.Oracle10gDialect
-    username: linksharing1
+    username: linksharing
     password: rxlogix
 environments:
     development:
         dataSource:
-            dbCreate: update
+            dbCreate: create-drop
             url: jdbc:oracle:thin:@localhost:1521/orcl
     test:
         dataSource:
@@ -126,16 +135,6 @@ environments:
                 testOnReturn: false
                 jdbcInterceptors: ConnectionState
                 defaultTransactionIsolation: 2 # TRANSACTION_READ_COMMITTED
+
 server:
-    port: 8000
-grails:
-    mail:
-        host: "smtp.gmail.com"
-        port: 465
-        username: "amityadav779@gmail.com"
-        password: "10march1998"
-        props:
-            mail.smtp.auth: "true"
-            mail.smtp.socketFactory.port: "465"
-            mail.smtp.socketFactory.class: "javax.net.ssl.SSLSocketFactory"
-            mail.smtp.socketFactory.fallback: "false"
+    port: 8010

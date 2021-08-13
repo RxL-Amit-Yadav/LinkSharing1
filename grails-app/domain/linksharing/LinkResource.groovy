@@ -1,8 +1,8 @@
 package linksharing
 
 class LinkResource extends GlobalResource{
-    String url;
+    String urloc;
     static constraints = {
-        url(blank: false,url: true)
+        urloc(blank: false,url: true)
     }
 }

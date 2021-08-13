@@ -97,7 +97,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <span>Topics</span>
                 <br>
-                <span>${linksharing.Subscription.countByTopics(Topic.findByGlobalUser(u))}</span>
+                <span>${linksharing.Subscription.countByGlobalUser(u)}</span>
                 &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
                 <span>${linksharing.Topic.countByGlobalUser(u)}</span>
 
@@ -168,25 +168,6 @@
                                     </g:form>
 
                                 </select>
-                                    %{--<g:form controller="topic" action="changePrivacy"  params="[id: num.topics.id]">--}%
-                                    %{--<g:if test="${num.topics.visibility ==  Topic.Visibility.PUBLIC}">--}%
-                                    %{--<select class="form-control form-control-sm" name="privacy" onchange="this.form.submit()">--}%
-
-                                    %{--<option value="private" >Private</option>--}%
-                                    %{--<option value="public" selected>Public</option>--}%
-
-                                    %{--</select>--}%
-                                    %{--</g:if>--}%
-                                    %{--<g:else>--}%
-                                    %{--<select class="form-control form-control-sm" name="privacy" onchange="this.form.submit()">--}%
-
-                                    %{--<option value="private" selected>Private</option>--}%
-                                    %{--<option value="public">Public</option>--}%
-
-                                    %{--</select>--}%
-                                    %{--</g:else>--}%
-
-                                    %{--</g:form>--}%
                                     <div>
 
 

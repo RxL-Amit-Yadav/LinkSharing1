@@ -2,11 +2,11 @@
 /* BASIC */
 
 html {
-    background-image: linear-gradient(to right,#fa4299,#a445b2);
+    background-image: linear-gradient(to right,lightblue,cyan);
 }
 
 body {
-    background-image: linear-gradient(to right,#fa4299,#a445b2);
+    background-image: linear-gradient(to right,lightblue,cyan);
     font-family: "Poppins", sans-serif;
     height: 100vh;
 }
@@ -57,8 +57,8 @@ h2 {
 }
 
 #formFooter {
-    background-color: #a445b2;
-    border-top: 1px solid #a445b2;
+    background-color: lightblue;
+    border-top: 1px solid  black;
     padding: 25px;
     text-align: center;
     -webkit-border-radius: 0 0 10px 10px;
@@ -75,7 +75,7 @@ h2.inactive {
 
 h2.active {
     color: #0d0d0d;
-    border-bottom: 2px solid #a445b2;
+    border-bottom: 2px solid black;
 }
 
 
@@ -83,7 +83,7 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 input[type=button], input[type=submit], input[type=reset]  {
-    background-color: #a445b2;
+    background-color: lightblue;
     border: none;
     color: white;
     padding: 15px 80px;
@@ -105,7 +105,7 @@ input[type=button], input[type=submit], input[type=reset]  {
 }
 
 input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-    background-color: #a445b2;
+    background-color: lightblue;
 }
 
 input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
@@ -139,11 +139,11 @@ input[type=text],input[type=password] {
 
 input[type=text]:focus {
     background-color: #fff;
-    border-bottom: 2px solid #a445b2;
+    border-bottom: 2px solid black;
 }
 input[type=password]:focus {
     background-color: #fff;
-    border-bottom: 2px solid #a445b2;
+    border-bottom: 2px solid black;
 }
 
 input[type=text]:placeholder {
@@ -249,7 +249,7 @@ input[type=password]:placeholder {
     bottom: -10px;
     width: 0;
     height: 2px;
-    background-color: #a445b2;
+    background-color: lightblue;
     content: "";
     transition: width 0.2s;
     color:black

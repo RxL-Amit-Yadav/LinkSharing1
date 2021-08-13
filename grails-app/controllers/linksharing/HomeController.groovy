@@ -1,19 +1,14 @@
 package linksharing
 
 class HomeController {
+    def homeService
 
     def index() {
-          render(view: "Dashboard");
+        if(session.user0==null){
+            redirect(controller: 'globalUser')
+        }
+        GlobalUser user= session.getAttribute("user0") as GlobalUser
+       def map = homeService.fetchmodal(user);
+        render(view:'Dashboard',model:map)
     }
-//    def action1(){
-//        GlobalUser u = GlobalUser.findByUsername(params.id);
-//        if(user){
-//            println("Ok ${params.name} you are in");
-//            redirect(controller:"home");
-//        }
-//        else{
-//            println("Sorry sir niklo yaha se");
-//            redirect(controller: "home");
-//        }
-//    }
 }

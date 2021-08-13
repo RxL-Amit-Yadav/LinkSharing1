@@ -4,9 +4,9 @@ class GlobalResource {
     String descrip;
     Date  dateCreated;
     Date  lastUpdated;
-    GlobalUser user1;
-    Topic topic;
+    GlobalUser globalUser ;
+    Topic topics;
 
-    static hasMany = [lresources:LinkResource,dresources:DocumentResource];
-    static belongsTo = [globalusers: GlobalUser, topics: Topic]
+    static hasMany = [readingitems:ReadingItem,resourceratings:ResourceRating];
+    static belongsTo = [topics:Topic , globalUser:GlobalUser]
 }
